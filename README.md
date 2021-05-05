@@ -26,6 +26,8 @@ Una vez que estamos en la carpeta `waya/` con las dependencias instaladas, damos
 
 ### TODO
 
+[ ] Añadir IDs.
+
 [ ] Pensar una condición final.
 
 [ ] Migrar a Python3.
