@@ -1,4 +1,4 @@
-#!/usr/bin/python2.7
+#!/usr/bin/python3
 #
 # Author: manfer33
 #
@@ -17,7 +17,7 @@ debug_file_name = "rpc_net_info_output"
 # Format: 
 # 'Lorem' '127.0.0.1'
 # 'Ipsum' '127.0.0.1'
-with open('input.txt','r') as content:
+with open('waya/input.txt','r') as content:
     for line in content:
         (key, val) = line.split(" ")
         node_list[key.replace("'",'')] = val.replace("'",'').replace('\n','')
@@ -56,14 +56,14 @@ def get_data():
                             node_list[str(peers[0][peer]['node_info']['moniker'])]= str(peers[0][peer]['remote_ip']).split(':')[0]
 
             except Exception as e:
-                print e
+                print(e)
 
             # Include current node in the node_checked var to avoid process it again in the next call of the function
             node_checked[moniker]=ip
 
     # To end generate an output file with the complete list of nodes located.
     # This file is continuously overwritten with the last complete result at the end of each iteration
-    with open('output.txt', 'w') as out:
+    with open('waya/output.txt', 'w') as out:
         for key, val in node_list.items():
             out.write("'%s' '%s'\n" % (key, val))
 
@@ -71,6 +71,6 @@ def get_data():
 # TODO: Think about any end condition
 while True:
     get_data()
-    print node_list #Debug
+    print(node_list) #Debug
     # print node_checked #Debug
     pass

@@ -56,7 +56,7 @@ def get_data():
                             node_list[str(peers[0][peer]['node_info']['moniker'])]= str(peers[0][peer]['remote_ip']).split(':')[0]
 
             except Exception as e:
-                print e
+                print(e)
 
             # Include current node in the node_checked var to avoid process it again in the next call of the function
             node_checked[moniker]=ip
@@ -71,6 +71,6 @@ def get_data():
 # TODO: Think about any end condition
 while True:
     get_data()
-    print node_list #Debug
+    print(node_list) #Debug
     # print node_checked #Debug
     pass
