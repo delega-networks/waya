@@ -15,7 +15,7 @@ pip install requests
 
 ### ¿Cómo se usa?
 
-- Se usan dos arhivos, uno llamado `input.txt` y otro `output.txt`.
+- Se usan dos archivos, uno llamado `input.txt` y otro `output.txt`.
 
 - El archivo `input.txt` tiene la información necesaria para realizar las peticiones, por defecto `localhost 127.0.0.1`. 
 
