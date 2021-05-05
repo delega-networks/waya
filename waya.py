@@ -17,7 +17,7 @@ debug_file_name = "rpc_net_info_output"
 # Format: 
 # 'Lorem' '127.0.0.1'
 # 'Ipsum' '127.0.0.1'
-with open('waya/input.txt','r') as content:
+with open('input.txt','r') as content:
     for line in content:
         (key, val) = line.split(" ")
         node_list[key.replace("'",'')] = val.replace("'",'').replace('\n','')
@@ -63,7 +63,7 @@ def get_data():
 
     # To end generate an output file with the complete list of nodes located.
     # This file is continuously overwritten with the last complete result at the end of each iteration
-    with open('waya/output.txt', 'w') as out:
+    with open('output.txt', 'w') as out:
         for key, val in node_list.items():
             out.write("'%s' '%s'\n" % (key, val))
 
