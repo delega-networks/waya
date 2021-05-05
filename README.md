@@ -8,8 +8,6 @@ Este script se crea con la intención de comprobar la seguridad de los nodos en 
 
 ### Dependencias
 ```sh
-pip install json
-
 pip install requests
 ```
 
