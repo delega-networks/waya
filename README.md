@@ -23,13 +23,15 @@ sudo apt install -y nmap
 
 Una vez que estamos en la carpeta `waya/` con las dependencias instaladas, damos permisos de ejecución con `chmod +x waya.py` , `chmod +x extractPort.py` y lo ejecutamos con `./waya.py`. En pocos segundos veremos como empieza a recolectar IPs y nombres _(moniker)_ y la guardará en el archivo `output.json`. Detenemos el script con `ctrnl+c` cuando veamos que no esta almacenando valores y que está dando algunos errores de conexión _(ver TODO)_.
 
-
 ### TODO
 
 [ ] Añadir IDs.
 
 [ ] Pensar una condición final.
 
-[ ] Migrar a Python3.
+[ ] Migrar a `Python3`.
 
-[ ] Exportar datos a CSV o JSON.
+[ ] Exportar datos de `waya.py` a `CSV` o `JSON`.
+
+
+>El programa se desarrolla para comprobar la seguridad de los nodos, úsalo bajo tu propia cuenta y riesgo, no nos hacemos responsables del mal uso del mismo.
