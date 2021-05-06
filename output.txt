@@ -1,1 +1,2 @@
 'localhost' '127.0.0.1'
+'seed-1.morpheus.desmos.network''172.105.122.103'
