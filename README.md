@@ -29,3 +29,5 @@ Una vez que estamos en la carpeta `waya/` con las dependencias instaladas, damos
 [ ] Pensar una condición final.
 
 [ ] Migrar a Python3.
+
+[ ] Exportar datos a CSV o JSON.
