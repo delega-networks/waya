@@ -9,6 +9,8 @@ Este script se crea con la intención de comprobar la seguridad de los nodos en 
 ### Dependencias
 ```sh
 pip install requests
+
+sudo apt install -y nmap
 ```
 
 ### ¿Cómo se usa?
