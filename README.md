@@ -21,7 +21,7 @@ sudo apt install -y nmap
 
 - El archivo `output.txt` almacenará la información recolectada como `'nombre' 'IP'` 
 
-Una vez que estamos en la carpeta `waya/` con las dependencias instaladas, damos permisos de ejecución con `chmod +x waya.py` y lo ejecutamos con `./waya.py`. En pocos segundos veremos como empieza a recolectar IPs y nombres _(moniker)_ y la guardará en el archivo `output.json`. Detenemos el script con `ctrnl+c` cuando veamos que no esta almacenando valores y que está dando algunos errores de conexión _(ver TODO)_.
+Una vez que estamos en la carpeta `waya/` con las dependencias instaladas, damos permisos de ejecución con `chmod +x waya.py` , `chmod +x extractPort.py` y lo ejecutamos con `./waya.py`. En pocos segundos veremos como empieza a recolectar IPs y nombres _(moniker)_ y la guardará en el archivo `output.json`. Detenemos el script con `ctrnl+c` cuando veamos que no esta almacenando valores y que está dando algunos errores de conexión _(ver TODO)_.
 
 
 ### TODO
